@@ -1,0 +1,187 @@
+.footer__container{
+    background-color: $color-brown;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.brand{
+    max-width: 35%;
+    padding-top: 62px;
+    @include laptop{
+        padding-top: 45px;
+    }
+    @include tablet{
+        max-width: 100%;
+    }
+}
+
+.brand__text{
+    color: $color-light;
+    text-align:left;
+    padding: 40px 0 27px 0;
+    @include tablet{
+        padding: 27px 0 27px 0;
+    }
+}
+
+.brand__social-list{
+    display: flex;
+    gap: 14px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 26.6%;
+    padding-top: 87px;
+    @include laptop{
+        padding-top: 60px;
+    }
+    @include tablet{
+        max-width: 100%;
+        padding-top: 40px;
+    }
+}
+
+.contact__list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact__subtitle{
+    font-size: 25px;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: -0.33px;
+    text-align: left;
+    @include desktop{
+        font-size: 17.5px;
+    }
+    @include laptop{
+        font-size: 20px;
+    }
+}
+
+.contact__item{
+    display: flex;
+    gap: 14px;
+}
+
+.contact__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.contact__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription{
+    display: flex;
+    flex-direction: column;
+    max-width: 35.5%;
+    padding-top: 87px;
+    gap: 24px;
+    @include laptop{
+        padding-top: 60px;
+        gap: 18px;
+    }
+    @include tablet{
+        gap: 18px;
+        max-width: 100%;
+        padding-top: 40px;
+    }
+}
+
+.subscription__subtitle{
+    font-size: 25px;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: -0.33px;
+    text-align: left;
+    @include desktop{
+        font-size: 22.5px;
+    }
+    @include laptop{
+        font-size: 20px;
+    }
+}
+
+.subscription__form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.subscription__input {
+    color: $color-input;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    &::placeholder {
+        color: $color-input;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: -0.33px;
+        @include desktop{
+            font-size: 17.5px;
+        }
+        @include laptop{
+            font-size: 15px;
+        }
+        @include tablet{
+            font-size: 12.5px;
+        }
+    }
+    @include laptop{
+        padding: 15px;
+    }
+}
+
+.subscription__button {
+    width: auto;
+    align-self: flex-start;  
+}
+
+.subscription__notice{
+    text-align: left;
+}
+
+.footer__copyright{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.copyright__line{
+    padding: 82px 0 26px 0;
+    @include laptop{
+        padding: 40px 0 20px 0;
+    }
+}
+
+.copyright__text{
+    color: $color-light;
+}

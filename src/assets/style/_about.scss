@@ -1,0 +1,76 @@
+.about__container{
+    background-color: $color-light;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 82px;
+    padding-bottom: 82px;
+    @include tablet{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    gap: 33px; //адаптив
+    align-items: flex-start;
+    max-width: 41%;
+    flex: 1;
+    @include mobile-sm{
+        display: none;
+    }
+}
+
+.about__title{
+    color: $color-dark;
+    text-align: left;
+}
+
+.about__text{
+    color: $color-grey;
+    text-align: left;
+}
+
+.about__logo{
+    display: block;
+    max-width: 50%; 
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0; 
+    @include mobile-sm{
+        display: none;
+    }
+}
+
+.about__button {
+    align-self: flex-start; 
+}
+
+.about__title--mobile{
+    color: $color-dark;
+    padding-bottom: 9px;
+}
+
+.about__text--mobile{
+    color: $color-grey;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.about__button-mobile{
+    align-self: center; 
+}
+
+.about__content--mobile{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    @include mobile-sm{
+        display: flex;
+    }
+}

@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3.2%;
+    @include tablet{
+        padding: 0 5%;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-family: $font-secondary;
+    font-size: 90px;
+    line-height: 100%;
+    font-weight: 400;
+    text-align: center;
+    @include desktop{
+        font-size: 80px;
+    }
+    @include laptop {
+        font-size: 72px;
+    }
+    @include tablet{
+        font-size: 50px;
+    }
+}
+
+h2 {
+    font-family: $font-secondary;
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    text-align: center;
+    @include desktop{
+        font-size: 45px;
+    }
+    @include laptop{
+        font-size: 40px;
+    }
+    @include tablet{
+        font-size: 35px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: -0.33px;
+    text-align: center;
+    @include laptop {
+        font-size: 25px;
+        line-height: 30px;        
+    }
+    @include tablet{
+        font-size: 20px;
+        line-height: 25px; 
+    }
+}
+
+h4{
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    text-align: center;
+    @include desktop{
+        font-size: 17.5px;
+        line-height: 27.5px;
+    }
+    @include laptop {
+        font-size: 15px;
+        line-height: 25px;        
+    }
+}
+
+h5{
+    font-size: 20px;
+    line-height: 125%;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    text-align: center;
+    @include desktop{
+        font-size: 17.5px;
+        line-height: 22.5px;
+    }
+    @include laptop{
+        font-size: 15px;
+        line-height: 20px;  
+    }
+}
+
+p{
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    text-align: center;
+    @include desktop{
+        font-size: 17.5px;
+        line-height: 17.5px;
+    }
+    @include laptop{
+        font-size: 15px;
+        line-height: 17.5px;  
+    }
+}
+
+.button_orange{
+    font-family: $font-primary;
+    background-color: $color-orange;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.33px;
+    padding: 20px 30px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    @include laptop{
+        font-size: 17.5px;
+        padding: 17.5px 22.5px;
+    }
+}
+
+.button_white{
+    font-family: $font-primary;
+    background-color: white;
+    border:  1px solid $color-orange;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.33px;
+    color: $color-orange;
+    padding: 12px 24px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    @include desktop{
+        font-size: 17.5px;
+        padding: 11px 16px;
+    }
+    @include laptop {
+        font-size: 15px;
+        padding: 10px 12.5px;
+    }
+}
